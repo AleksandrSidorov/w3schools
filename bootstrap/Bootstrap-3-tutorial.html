@@ -1277,7 +1277,7 @@ line breaks.</pre>
     </ul>
   </div>
   <p>If you want the dropdown menu to expand upwards instead of downwards,
-    change the <code>&lt;div&rt;</code> element with class <code>.dropdown</code>
+    change the <code>&lt;div&gt;</code> element with class <code>.dropdown</code>
     to <code>.dropup</code>:</p>
   <div class="dropup">
     <button class="btn btn-default dropdown-toggle" type="button"
@@ -1312,6 +1312,68 @@ line breaks.</pre>
     </ul>
   </div>
 </div>
+
+<div class="container">
+  <div class="page-header">
+    <h1>Bootstrap Collapse</h1>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Basic Collapsible</h2>
+  <p>Collpsibles are useful when you want to hide and show large amount of
+    content:</p>
+  <button type="button" class="btn btn-info" data-toggle="collapse"
+  data-target="#demo">Simple Collapsible</button>
+  <div id="demo" class="collapse">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+  <p>The <code>.collapse</code> class indicates a collapsible element ( a
+    <code>&lt;div&gt;</code> in our example); this is the content that will be
+    shown or hidden with a click of a button.</p>
+  <p>To control (show/hide) the collapsible content, add the
+    <code>data-toggle=&quot;collapse&quot;</code> attribute to an <code>&lt;a&gt;</code>
+    or a <code>&lt;button&gt;</code> element. Then add the
+    <code>data-target=&quot;#id&quot;</code> attribute to connect the button with the
+    collapsible content (<code>&lt;div id=&quot;demo&quot;&gt;</code>).</p>
+  <p><strong>Note:</strong> For <code>&lt;a&gt;</code> elements, yoiu can use
+    <code>href</code> attribute instead of the <code>data-target</code> attribute:</p>
+  <a href="#demo2" class="btn btn-info" data-toggle="collapse">Simple collapsible</a>
+  <div id="demo2" class="collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+  <p>By default, teh collapse content is hedden. However, you can add the
+    <code>.in</code> class to show the content by default:</p>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo3">
+    Simple Collapse</button>
+  <div id="demo3" class="collapse in">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+</div>
+
+<div class="container">
+  <h2>Collapsible Panel</h2>
+  <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapse1">Collapsible Panel</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">
+        <div class="panel-body">Panel Body</div>
+        <div class="panel-footer">Panel Footer</div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 </body>
 </html>
