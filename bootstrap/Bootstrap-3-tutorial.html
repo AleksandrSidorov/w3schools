@@ -1022,7 +1022,82 @@ line breaks.</pre>
   </ul>
 </div>
 
+<div class="container">
+  <div class="page-header">
+    <h1>Bootstrap List Groups</h1>
+  </div>
+</div>
 
+<div class="container">
+  <h2>Basic List Group</h2>
+  <p>To create a basic list group, use an <code>&lt;ul&gt;</code> element with
+    class <code>.list-group</code>, and <code>&lt;li&gt;</code> elements with
+    class <code>.list-group-item</code>:</p>
+  <ul class="list-group">
+    <li class="list-group-item">First item</li>
+    <li class="list-group-item">Second item</li>
+    <li class="list-group-item">Third item</li>
+  </ul>
+</div>
+
+<div class="container">
+  <h2>List With Badges</h2>
+  <p>To create a badge, create a <code>&lt;span&gt;</code> element with class
+    <code>.badge</code> inside the list item:</p>
+  <ul class="list-group">
+    <li class="list-group-item">New<span class="badge">12</span></li>
+    <li class="list-group-item"><span class="badge">5</span> Deleted</li>
+    <li class="list-group-item"><span class="badge">3</span> Warninig</li>
+  </ul>
+</div>
+
+<div class="container">
+  <h2>List Group With Linked Items</h2>
+  <p>To create a list group with linked items, use <code>&lt;div&gt;</code>
+    instead of <code>&lt;ul&gt;</code> and <code>&lt;a&gt;</code> instead of
+    <code>&lt;li&gt;</code>:</p>
+  <p>To make item acteve, add the <code>.active</code> class.</p>
+  <p>To disable an item, add the <code>.disabled</code> class.</p>
+  <div class="list-group">
+    <a href="#" class="list-group-item active">First item</a>
+    <a href="#" class="list-group-item">Second item</a>
+    <a href="#" class="list-group-item disabled">Third item</a>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Contextual Classes</h2>
+  <p>The classes for conloring list-items are: <code>.list-group-item-success</code>,
+    <code>.list-group-item-info</code>, <code>.list-group-item-warning</code>,
+    and <code>.list-group-item-danger</code>:</p>
+  <ul class="list-group">
+    <li class="list-group-item list-group-item-success">First item</li>
+    <li class="list-group-item list-group-item-info">Second item</li>
+    <li class="list-group-item list-group-item-warning">Third item</li>
+    <li class="list-group-item list-group-item-danger">Fourth item</li>
+  </ul>
+</div>
+
+<div class="container">
+  <h2>Custom Content</h2>
+  <p>You can add nearly any HTML inside a list group item.</p>
+  <p>Bootstrap provides teh classes <code>.list-group-item-heading</code> and
+    <code>.list-group-item-text</code> which can be used as follows:</p>
+  <div class="list-group">
+    <a href="#" class="list-group-item active">
+      <h4 class="list-group-item-heading">First List Group Item Heading</h4>
+      <p class="list-group-item-text">List Group Item Text</p>
+    </a>
+    <a href="#" class="list-group-item">
+      <h4 class="list-group-item-heading">Second List Group Item Heading</h4>
+      <p class="list-group-item-text">List Group Item Text</p>
+    </a>
+    <a href="#" class="list-group-item disabled">
+      <h4 class="list-group-item-heading">Third List group Item Heading</h4>
+      <p class="list-group-item-text">List Group Item Text</p>
+    </a>
+  </div>
+</div>
 
 </body>
 </html>
