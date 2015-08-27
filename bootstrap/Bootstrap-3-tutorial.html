@@ -1425,6 +1425,183 @@ line breaks.</pre>
   </div>
 </div>
 
+<div class="container">
+  <div class="page-header">
+    <h1>Bootstrap Tabs and Pills</h1>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Menus</h2>
+  <p>To create a horizontal menu of the list, add <code>.list-inline</code>
+    class to <code>&lt;ul&gt;</code>:</p>
+  <ul class="list-inline">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Menu 1</a></li>
+    <li><a href="#">Menu 2</a></li>
+    <li><a href="#">Menu 3</a></li>
+  </ul>
+</div>
+
+<div class="container">
+  <h2>Tabs</h2>
+  <p>Tabs are created with <code>&lt;ul class=&quot;nav nav-tabs&quot;&gt;</code>.</p>
+  <p><strong>Tip:</strong> Also mark the current page with <code>&lt;li
+    class=&quot;active&quot;&gt;</code>.</p>
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Menu 1</a></li>
+    <li><a href="#">Menu 2</a></li>
+    <li><a href="#">Menu 3</a></li>
+  </ul>
+  <h3>Tabs With Dropdown menus</h3>
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="3">Home</a></li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 1
+      <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Submenu 1</a></li>
+        <li><a href="#">Sumbenu 2</a></li>
+        <li><a href="#">Submenu 3</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Menu 2</a></li>
+    <li><a href="#">Menu 3</a></li>
+  </ul>
+</div>
+
+<div class="container">
+  <h2>Pills</h2>
+  <p>Pills are created with <code>&lt;ul class=&quot;nav nav-pills&quot;&gt;</code>.
+    Also mark the current page with <code>&lt;li class=&quot;active&quot;&gt;</code>:
+  </p>
+  <ul class="nav nav-pills">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Menu 1</a></li>
+    <li><a href="#">Menu 2</a></li>
+    <li><a href="#">Menu 3</a></li>
+  </ul>
+  <h3>Vertical Pills</h3>
+  <p>Pills can also be displayed vertically. Just add the <code>.nav-stacked</code>
+    class:
+  </p>
+  <ul class="nav nav-pills nav-stacked">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Menu 1</a></li>
+    <li><a href="#">Menu 2</a></li>
+    <li><a href="#">Menu 3</a></li>
+  </ul>
+  <h3>Vertical Pills in a Row</h3>
+  <div class="row">
+    <div class="col-md-3">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+    <div class="col-md-3">
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+    <div class="col-md-3">
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam.
+      </p>
+    </div>
+    <div class="col-md-3">
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Menu 1</a></li>
+        <li><a href="#">Menu 2</a></li>
+        <li><a href="#">Menu 3</a></li>
+      </ul>
+    </div>
+  </div>
+  <h3>Vertical Pills With Dropdown Menu</h3>
+  <ul class="nav nav-pills nav-stacked">
+    <li class="active"><a href="3">Home</a></li>
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 1
+      <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Submenu 1</a></li>
+        <li><a href="#">Sumbenu 2</a></li>
+        <li><a href="#">Submenu 3</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Menu 2</a></li>
+    <li><a href="#">Menu 3</a></li>
+  </ul>
+</div>
+
+<div class="container">
+  <h2>Centered Tabs and Pills</h2>
+  <p>to center/justify the tabs and pills, use the <code>.nav-justified</code>
+    class.
+  </p>
+  <p><strong>Note:</strong> On screens that are smaller than 768px, the list
+    items are stacked (content will remain centered):
+  </p>
+  <h3>Centered Tabs</h3>
+  <ul class="nav nav-tabs nav-justified">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Menu 1</a></li>
+    <li><a href="#">Menu 2</a></li>
+    <li><a href="#">Menu 3</a></li>
+  </ul>
+  <h3>Centered Pills</h3>
+  <ul class="nav nav-pills nav-justified">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Menu 1</a></li>
+    <li><a href="#">Menu 2</a></li>
+    <li><a href="#">Menu 3</a></li>
+  </ul>
+</div>
+
+<div class="container">
+  <h2>Toggable / Dynamic Tabs</h2>
+  <p>To make the tabs toggable, add the <code>data-toggle=&quot;tab&quot;</code>
+    attribute to each link. Then add a <code>.tab-pane</code> class with a
+    unique ID for every tab and wrap them inside <code>&lt;div&gt;</code>
+    element with class <code>.tab-content</code>.
+  </p>
+  <p>If you want the tabs to fade in and out when clicking on them, add the
+    <code>.fade</code> class to <code>.tab-pane</code>:
+  </p>
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#togglehome">Home</a></li>
+    <li><a data-toggle="tab" href="#togglemenu1">Menu 1</a></li>
+    <li><a data-toggle="tab" href="#togglemenu2">Menu 2</a></li>
+    <li><a data-toggle="tab" href="#togglemenu3">Menu 3</a></li>
+  </ul>
+  <div class="tab-content">
+    <div id="togglehome" class="tab-pane fade in active">
+      <h3>HOME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </div>
+    <div id="togglemenu1" class="tab-pane fade">
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+    <div id="togglemenu2" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam.
+      </p>
+    </div>
+    <div id="togglemenu3" class="tab-pane fade">
+      <h3>Menu 3</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+        vitae dicta sunt explicabo.
+      </p>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
