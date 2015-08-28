@@ -1809,6 +1809,116 @@ line breaks.</pre>
   </form>
 </div>
 
+<div class="container">
+  <div class="page-header">
+    <h1>Bootstrap Form Inputs</h1>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Supported Form Controls</h2>
+  <p>Bootstrap supports the following form contols</p>
+  <ul>
+    <li>input</li>
+    <li>textarea></li>
+    <li>radio</li>
+    <li>checkbox</li>
+    <li>select</li>
+  </ul>
+  <h2>Bootstrap Input</h2>
+  <p>Bootstrap supports all the HTML5 input types: text, password, datetime, datetime-local, month, time, week, number, email, url, search, tel, and color.</p>
+  <p><strong>Note:</strong> Inputs will NOT be fully styled if their type is not properly declared!</p>
+  <p>The form below contains two input elements; one of type text and one of type password:</p>
+  <form role="form">
+    <div class="form-group">
+      <label for="user">Name:</label>
+      <input type="text" class="form-control" id="usr">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd">
+    </div>
+  </form>
+
+  <h2>Textarea</h2>
+  <p>The following example contains a textarea for comments:</p>
+  <form role="form">
+    <div calss="form-group">
+      <label for="comment">Comment:</label>
+      <textarea class="form-control" rows="5" id="comment"></textarea>
+    </div>
+  </form>
+
+  <h2>Checkboxes</h2>
+  <p>Checkboxes are used if you want the user to select any number of options from a list of preset options.</p>
+  <p>The form below contains three checkboxes. The last option is disabled:</p>
+  <form role="form">
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Option 1</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Option 2</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" disabled>Option 3</label>
+    </div>
+  </form>
+  
+  <p>Use the <code>.checkbox-inline</code> class if you want the checkboxes to appear on the same line:</p>
+  <form role="form">
+    <label class="checkbox-inline"><input type="checkbox" value="">Option 1</label>
+    <label class="checkbox-inline"><input type="checkbox" value="">Option 2</label>
+    <label class="checkbox-inline disabled"><input type="checkbox" value="" disabled>Option 3</label>
+  </form>
+
+  <h2>Radio Buttons</h2>
+  <p>Radio buttons are used is you want to limit the user to just one selection from a list of preset options.</p>
+  <p>The form below contains three radio buttons. The last option is disabled:</p>
+  <form role="form">
+    <div class="radio">
+      <label><input type="radio" name="optradio">Option 1</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="optradio">Option 2</label>
+    </div>
+    <div class="radio disabled">
+      <label><input type="radio" name="optradio" disabled>Option 3</label>
+    </div>
+  </form>
+
+  <p>The form below contains three inline radio buttons:</p>
+  <form role="form">
+    <label class="radio-inline"><input type="radio" name="optradio">Option 1</label>
+    <label class="radio-inline"><input type="radio" name="optradio">Option 2</label>
+    <label class="radio-inline disabled"><input type="radio" name="optradio" disabled>Option 3</label>
+  </form>
+
+  <h2>Select List</h2>
+  <p>Select lists are used if you want ot allow the user to pick from mumtiple options.</p>
+  <p>The form below contains two driopdown menus (select lists):</p>
+  <form role="form">
+    <div class="form-group">
+    <label for="sel1">Select list (select one):</label>
+    <select class="form-control" id="sel1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+    </select>
+    <br>
+    <label for="sel2">Multiple select list (hold shift to select more than one):</label>
+    <select multiple class="form-control" id="sel2">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+    </div>
+  </form>
+
+</div>
+
 
 </body>
 </html>
