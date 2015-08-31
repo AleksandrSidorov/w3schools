@@ -2044,10 +2044,90 @@ line breaks.</pre>
       <span class="glyphicon glyphicon-remove form-control-feedback"></span>
     </div>
   </form>
+</div>
+
+<div class="container">
+  <div class="page-header">
+    <h1>Bootstrap Input Sizing</h1>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Input Sizing in Forms</h2>
+  <p>Set the heights of input elements using clsasses like
+    <code>.input-ls</code> and <code>.input-sm</code>.
+  </p>
+  <p>Set the width of elements using grid column classes like
+    <code>.col-lg-*</code> and <code>.col-sm-*</code>.
+  </p>
+
+  <h2>Height Sizing</h2>
+  <p>The form belos whows input elements with different heights using
+    <code>.input-lg</code> and <code>.input-sm</code>:
+  </p>
+  <form role="form">
+    <div class="form-group">
+      <label for="inputdefault">Default input</label>
+      <input class="form-control" id="inputdefault" type="texgt">
+    </div>
+    <div class="form-group">
+      <label for="inputlg">input-lg</label>
+      <input class="form-control input-lg" id="inputlg" type="texgt">
+    </div>
+    <div class="form-group">
+      <label for="inputsm">input-sm</label>
+      <input class="form-control input-sm" id="inputsm" type="texgt">
+    </div>
+  </form>
+  <div class="form-group">
+    <label for="selectdefault">Default Select</label>
+    <select class="form-control" id="selectdefault">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="selectlg">input-lg</label>
+    <select class="form-control input-lg" id="selectlg">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="selectsm">input-sm</label>
+    <select class="form-control input-sm" id="selectsm">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+    </select>
+  </div>
+
+  <p>You can quickly size labels and form controls within a <strong>Horizontal
+    forms</strong> by adding <code>.form-group-*</code> to the
+    <code>&lt;div class=&quot;form-group&quot;</code> element:
+  </p>
+  <form class="form-horizontal" role="form">
+    <div class="form-group form-group-lg">
+      <label class="col-sm-2 form-label" for="lg2">form-group-lg</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="lg2" type="text">
+      </div>
+    </div>
+    <div class="form-group form-group-sm">
+      <label class="col-sm-2 form-label" for="sm2">form-group-sm</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="sm2" type="text">
+      </div>
+    </div>
+  </form>
 
 
 </div>
-
 
 </body>
 </html>
