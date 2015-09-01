@@ -2464,5 +2464,52 @@ line breaks.</pre>
   </div>
 </div>
 
+<div class="container">
+  <div class="page-header">
+    <h1>Bootstrap Tooltip Plugin</h1>
+  </div>
+
+  <h2>The Tooltip Plugin</h2>
+  <p>The Tooltip plugin is small pop-up box that appears when the user moves
+    the mouse pointer over an element.
+  </p>
+
+  <h2>How To Create Tooltip</h2>
+  <p>To create a tooltip, add the <code>data-toggle=&quot;tooltip&quot;</code>
+    attribute to an element.
+  </p>
+  <p>Use the <code>title</code> attribute to specify the text that chould be
+    displayed inside the tooltip:
+  </p>
+  <p><stront>Note:</strong> Tooltips must be initialized with jQuery: select the
+    specified element and call the tooltip() method.
+  </p>
+  <ul class="list-inline">
+    <li><button type="button" class="btn btn-success" data-toggle="tooltip"
+  title="Hooray!">Hover over me</button></li>
+    <li><a href="#" data-toggle="tooltip" title="Hooray again!">Hover over me</a></li>
+  </ul>
+
+  <h2>Positioning Tooltips</h2>
+  <p>By default, the tooltip will appear on top of the element.</p>
+  <p>Use the <code>data-placement</code> attribute to set the position of the
+    tooltip on top, bottom, left or the right side of the element:
+  </p>
+  <ul class="list-inline">
+    <li><a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">Hover</a></li>
+    <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Hover</a></li>
+    <li><a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!">Hover</a></li>
+    <li><a href="#" data-toggle="tooltip" data-placement="rigth" title="Hooray!">Hover</a></li>
+  </ul>
+
+</div>
+
+<script>
+$(document).ready(function() {
+  $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+
+
 </body>
 </html>
