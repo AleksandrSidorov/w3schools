@@ -2580,6 +2580,40 @@ line breaks.</pre>
   this popover">Click Me</button>
 </div>
 
+<div class="container">
+  <div class="page-header">
+    <h1>Bootstrap Scrollspy Plugin (Advanced)</h1>
+  </div>
+
+  <p>The Scrollsly plugin is used to automatically update links in a navigation
+    list based on scroll position.
+  </p>
+
+  <h2>How To Create a Scrollspy</h2>
+  <p>Add <code>data-spy=&quot;scroll&quot;</code> to the element that should be
+    used as the scrollable area (often this is the &lt;body&gt; element).
+  </p>
+  <p>Than add the <code>data-target</code> attribute with a value of the id or
+    the class name of the navigation bar (<code>.bavbar</code>). This is to
+    make sure that the navbar is connected with the scrollable area.
+  </p>
+  <p>Note that scrollable elements must match the ID of the links inside the
+    navbar's list items (<code>&lt;div id=&quot;section1&quot;&gt;</code> matches
+    <code>&lt;a href=&quot;#section1&quot;&gt;</code>).
+  </p>
+  <p>The optional <code>data-offset</code> attribute specifies the number of
+    pixels to offset from top when calculating the position of scroll. This is
+    useful when you feel that the links inside the navbar changes the active
+    state too soon or too early when jumping to the scrollable elements. Default
+    is 10 pixels.
+  </p>
+  <p><strong>Requires relative positioning:</strong> The element with
+    <code>data-spy=&quot;scroll&quot;</code> requires the CSS
+    <strong>position</strong> property, with a value of &quot;relative&quot;
+    to work properly.
+  </p>
+  <a href="scrollspy-example.html" class="btn btn-success" target="_blank">Example</a>
+
 <script>
 $(document).ready(function() {
   $('[data-toggle="tooltip"]').tooltip();
