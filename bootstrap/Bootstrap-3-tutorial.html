@@ -2332,6 +2332,10 @@ line breaks.</pre>
      the current page.
    </p>
    <p><strong>Tip:</strong> Plugins can be included individually (using
+     Bootstrap's individual &quot;carousel.js&quot; file), or all at once (using
+     &quot;bootstrap.js&quot; or &quot;bootstrap.min.js&quot;).
+   </p>
+   <p><strong>Tip:</strong> Plugins can be included individually (using
      Bootstrap's individual &quot;modal.js&quot; file), or all at once (using
      &quot;bootstrap.js&quot; or &quot;bootstrap.min.js&quot;).
    </p>
@@ -2501,12 +2505,85 @@ line breaks.</pre>
     <li><a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!">Hover</a></li>
     <li><a href="#" data-toggle="tooltip" data-placement="rigth" title="Hooray!">Hover</a></li>
   </ul>
+</div>
 
+<div class="container">
+  <div class="page-header">
+    <h1>Bootstrap Popover Plugin</h1>
+  </div>
+
+  <h2>The Popover Plugin</h2>
+  <p>The Popover plugin is similar to tooltips; it is a pop-up box that appears
+    when the user clicks on an element. The difference is that the popover can
+    contain much more content.
+  </p>
+  <p><strong>Tip:</strong> Plugins can be included individually (using
+    Bootstrap's individual &quot;carousel.js&quot; file), or all at once (using
+    &quot;bootstrap.js&quot; or &quot;bootstrap.min.js&quot;).
+  </p>
+
+  <h2>How to Create a Popover</h2>
+  <p>To create a popover, add the <code>data-toggle=&quot;popover&quot;</code>
+    attribute to an element.
+  </p>
+  <p>Use the <code>title</code> attribute to specify the header texto of the
+    header text of the popover, and use the <code>data-content</code>
+    attribute to specifiy the text that should be displayed inside the popover's
+    body.
+  </p>
+  <p><strong>Note:</strong> Popovers must be inintialized with jQuery: select
+    the specified element and call the popover() method.
+  </p>
+  <ul class="list-inline">
+    <li><button type="button" class="btn btn-success" title="Popover header" data-toggle="popover"
+      data-content="Some content inside the popover">Click To Toggle Popover</button>
+    </li>
+    <li><a href="#" data-toggle="popover" title="Popover header"
+      data-content="Some content inside the popover">Click To Toggle Popover</a>
+    </li>
+  </ul>
+
+  <h2>Positioning Popovers</h2>
+  <p>By default, the popover will appear on the right side of the element.</p>
+  <p>Use the <code>data-placement</code> attribute to set the position of the
+    popover on top, bottom, left of right side of the element.
+  </p>
+  <ul class="list-inline">
+    <li><a href="#" title="Header" data-toggle="popover"
+      data-placement="top" data-content="Content">Click</a>
+    </li>
+    <li><a href="#" title="Header" data-toggle="popover"
+      data-placement="bottom" data-content="Content">Click</a>
+    </li>
+    <li><a href="#" title="Header" data-toggle="popover"
+      data-placement="left" data-content="Content">Click</a>
+    </li>
+    <li><a href="#" title="Header" data-toggle="popover"
+      data-placement="right" data-content="Content">Click</a>
+    </li>
+  </ul>
+
+  <h2>Closing Popovers</h2>
+  <p>By default, the popover is closed when you click on the element again.
+    However, you can use the <code>data-trigger=&quot;focus&quot;</code>
+    attribute which will close the popover when clicking outside the element:
+  </p>
+  <button class="btn btn-success" title="Dismissible popover" data-toggle="popover"
+  data-trigger="focus" data-content="Click anywhere in the document to close
+  this popover">Click Me</button>
+  <p><strong>Tip:</strong> If you want the popover to be displayed when you move
+    the mouse pointer over the element, use the <code>data-trigger</code>
+    attribute with a value of &quot;hover&quot;:
+  </p>
+  <button class="btn btn-success" title="Dismissible popover" data-toggle="popover"
+  data-trigger="hover" data-content="Click anywhere in the document to close
+  this popover">Click Me</button>
 </div>
 
 <script>
 $(document).ready(function() {
   $('[data-toggle="tooltip"]').tooltip();
+  $('[data-toggle="popover"]').popover();
 });
 </script>
 
