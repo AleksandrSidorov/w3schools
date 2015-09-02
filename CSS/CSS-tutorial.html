@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>CSS Tutorial</title>
+  <mata charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="page-header">
+      <h1>CSS Introduction</h1>
+    </div>
+
+    <h2>What is CSS?</h2>
+    <ul>
+      <li><strong>CSS</strong> stands for <strong>C</strong>ascading
+        <strong>S</strong>tyle <strong>S</strong>heets</li>
+      <li>CSS defines <strong>how HTML elements are to be displayed</strong></li>
+      <li>Styles were added to HTML 4.0 <strong>to solve a problem</strong></li>
+      <li>CSS saves a lot of work</li>
+      <li>External Styel Sheets are stroed in <strong>CSS files</strong></li>
+    </ul>
+
+    <h2>CSS Solved a Big Problem</h2>
+    <p>HTML was Never intended to contain tags for formatting a document.</p>
+    <p>HTML was intended to <strong>define the content</strong> of a document,
+      like:</p>
+    <p>&lt;h1&gt;This is a heading&lt/h1&gt;</p>
+    <p>&lt;p&gt;This is a paragraph.&lt;/p&gt;</p>
+    <p>When tags like &lt;font&gt;, and color attributes were added to the HTML
+      3.2 specification, it started a nightmare for web developers. Development
+      of large web sites, where fonts and color information were added to every
+      single page, became a long and expensive process.</p>
+    <p>To solve this problem, the World Wide Web Consortium (W3C) created CSS.
+    </p>
+    <p>In HTML 4.0, all formatting could (and should!) be removed from the HTML
+      document, and stored in a separate CSS file.</p>
+    <p>The style definitions are normally saved in external .css files.</p>
+    <p>With an external style sheet file, yoiu can change the look of an entire
+      Web site by changing just one file!</p>
+  </div>
+
+  <div class="container">
+    <div class="page-header">
+      <h1>CSS Syntax</h1>
+    </div>
+
+    <p>A CSS rule set consists of a selector and a declaration block:</p>
+    <pre>sesector {property: value; property2: value;}</pre>
+    <p>The selector points to the HTML element you want to style.</p>
+    <p>The declaration block contains one or more declarations separated by
+      semicolons.
+    </p>
+    <p>Each declaration includes a property name and a value, separated by a
+      colon.</p>
+
+    <h2>CSS Example</h2>
+    <p>A CSS declaration always ends with a semicolon, and declaration groups
+      are surronded by curly braces:</p>
+    <pre>p {color:red; text-align:center;}</pre>
+    <p>To make the CSS code more readable, yoiu can put one declaration on each
+      lne.</p>
+    <p>In the following example all &lt;p&gt; elements will be center-aligned,
+      with a red text color:</p>
+    <pre>p {
+    color: red;
+    text-align: center;
+}</pre>
+
+    <h2>CSS Comments</h2>
+    <p>Comments are used to explain your code, and may help you when you edit
+      the source code at a later date. Comments are ignored by browsers.</p>
+    <p>A CSS comment starts with <code>/*</code> and ends with
+      <code>*/</code>. Comments can also span multiple lines:</p>
+    <pre>p {
+    color: red;
+    /* This is a single-line comment */
+    text-align: center;
+}
+
+/* This is
+a multi-line
+comment */
+</pre>
+
+  </div>
+
+
+</body>
