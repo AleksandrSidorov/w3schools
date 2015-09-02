@@ -84,9 +84,70 @@
 
 /* This is
 a multi-line
-comment */
-</pre>
+comment */</pre>
+  </div>
 
+  <div class="container">
+    <div class="page-header">
+      <h1>CSS Selectors</h1>
+    </div>
+
+    <p>CSS selectors allow you to select elements and manipulate HTML elements.</p>
+    <p>CSS selectors are used to &quot;find&quot; (or select) HTML elements
+      based on their id, class, type, attribute, and more.</p>
+    <h2>The element Selector</h2>
+    <p>The element selecor selects elements based on the element name.</p>
+    <p>You can select all &lt;p&gt; elements on a page like this: (all &tl;p&gt;
+      elements will be center-aligned, with a red text color)</p>
+    <pre>p {
+    color: red;
+    text-align: center;
+}</pre>
+
+    <h2>The id Selector</h2>
+    <p>The id selector uses the id atribute of an HTML element to select a
+      specific element.</p>
+    <p>An id should be unique within a page, so the id selector is used if you
+      want to select a single, unique element.</p>
+    <p>To select an element with a specific id, write a hash character,
+      followed by the id of the element.</p>
+    <p>The style rule below will be applied to the HTML element with
+      id=&quot;para1&quot;:</p>
+    <pre>#para1 {
+    color: red;
+    text-align: center;
+}</pre>
+    <p>Do <strong>NOT</strong> start an ID name with a number!</p>
+
+    <h2>The class Selector</h2>
+    <p>The class selector selects elements with a specific class attribute.</p>
+    <p>To select elements with a specific class, write a period character,
+      followed yb the name of the class.</p>
+    <p>In the example below, all HTML elements with class=&quot;center&quot;
+      will be center-aligned:</p>
+    <pre>.center {
+    color: red;
+    text-align: center;
+}</pre>
+    <p>You can also specify that only specific HTML elements shuold be affected
+      by a class.</p>
+    <p>In the example below, all &lt;p&gt; elements with
+      class=&quot;center&quot; will be center-aligned:
+    </p>
+    <pre>p.center {
+    color: red;
+    text-align: center;
+}</pre>
+    <p>Do <strong>NOT</strong> start a class name with a number!</p>
+
+    <h2>Grouping Selectors</h2>
+    <p>If you have elements with the same style definitions, you can group the
+      selectors, to minimize the code.</p>
+    <p>To group selectors, separate each selector with a comma.</p>
+    <pre>h1, h2, p {
+    color: red;
+    text-align: center;
+}</pre>
   </div>
 
 
