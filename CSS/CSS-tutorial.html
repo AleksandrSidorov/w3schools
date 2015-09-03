@@ -150,5 +150,131 @@ comment */</pre>
 }</pre>
   </div>
 
+  <div class="container">
+    <div class="page-header">
+      <h1>CSS How To...</h1>
+    </div>
+
+    <p>When a browser reads a style sheet, it will format the document to the
+      information in the style sheet.</p>
+    <h2>Three ways to Insert CSS</h2>
+    <p>There are three ways of inserting a style sheet:</p>
+    <ul>
+      <li>Extern style sheet</li>
+      <li>Internal style sheet</li>
+      <li>Inline style</li>
+    </ul>
+
+    <h2>External Style Sheet</h2>
+    <p>With an external style sheet, you can change the look of an entire
+      website by changing just one file!</p>
+    <p>each page must include a reference to the external style sheet file
+      inside the &lt;link&gt; element goes inside the head section:</p>
+    <pre>
+&lt;head&gt;
+&lt;link rel="stylesheet" href="mystyle.css"&gt;
+&lt;/head&gt;</pre>
+    <p>An external style sheet can be written in any text editor. The file
+      should not contain any html tags. The style sheet file must be saved with
+      a .css extension. An example of a style sheet file called "myStyle.css",
+      is shown below:
+    </p>
+    <pre>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}</pre>
+    <p><strong>Do not</strong> add a space between the property value and the
+      unit (such as margin-left: 20 px;). The correct way is:
+      <code>margin-left: 20px;</code></p>
+
+    <h2>Internal Style Sheet</h2>
+    <p>An internal style sheet may be used if one single page has a unique
+      style.</p>
+    <p>Internal styles are defined within the &lt;style&gt; element, inside the
+      head section of an HTML page:</p>
+    <pre>
+&lt;head&gt;
+&lt;style&gt;
+body {
+  background-color: linen;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+}
+&lt;/style&gt;
+&lt;/head&gt;</pre>
+
+    <h2>Inline Styles</h2>
+    <p>An inline style may be used to apply a unique style for a single element.</p>
+    <p>An inline style loses many of the advantages of a style sheet (by mixing
+      content with presentation). Use this method sparingly!</p>
+    <p>To use inline styles, add the style attribute to the relevant tag.
+      The style attribute can contain any CSS property. The example shows how
+      to change the color and the left margin of a &lt;h1&gt; element:</p>
+    <pre>
+&lt;h1 style="color:blue;margin-left:30px;"&gt;This is a heading.&lt;/h1&gt;</pre>
+
+    <h2>Multiple Style Sheets</h2>
+    <p>If some properties have been defined for the same selector in different
+      style sheets, the value will be inherited from the more specific style
+      sheet.
+    </p>
+    <p>For example, assume that an external style sheet has the following
+      properties for the &lt;h1&gt; element:
+    </p>
+    <pre>
+h1 {
+  color: navy;
+  margin-left: 40px;
+}</pre>
+    <p>then, assume that an internal style sheet also has the following property
+      for the &lt;h1&gt; element:
+    </p>
+    <pre>
+h1 {
+  color: orange;
+}</pre>
+    <p>If the page with the internal style sheet also links to the external
+      stylesheet the properites for the &lt;h1&gt; element will be:
+    </p>
+    <pre>
+color: orange;
+margin-left: 20px;</pre>
+    <p>The left margin is inherited from the external style sheet and the color
+      is replaced by the internal style sheet.
+    </p>
+
+    <h2>Multiple Styles Will Cascade into One</h2>
+    <p>Styles can be specified:</p>
+    <ul>
+      <li>in an exterlnal CSS file</li>
+      <li>inside the &lt;head&gt; section fo an HTML page</li>
+      <li>inside an HTML element</li>
+    </ul>
+    <h3>Cascading order</h3>
+    <p>What style will be used when there is omre than one style specified for
+      ah HTML element?</p>
+    <p>Generally speaking we can say that all the sytles will "cascade" into a
+      new "virtual" style sheet by teh following rules, wehre nubmer three has
+      the hightest priority:</p>
+    <ol>
+      <li>Browser default</li>
+      <li>External and internal style sheets (in the head section)</li>
+      <li>Inline style (inside an HTML element)</li>
+    </ol>
+    <p>So, an inline style (inside an HTML element) has the highest priority,
+      which means that it will override a style defined inside the &lt;head&gt;
+      tag, or in an external style sheet, or in a browser (a default value).</p>
+    <p><strong>Note:</strong> If the link to the external style sheet is placed
+      below the internal style sheet in HTML &lt;head&gt;, the external style
+      sheet will override the internal style sheet!</p>
+  </div>
 
 </body>
